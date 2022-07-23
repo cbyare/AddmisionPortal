@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UniversityAdmisionApplcation.Models;
 
 namespace UniversityAdmisionApplcation.Controllers
 {
@@ -6,6 +7,13 @@ namespace UniversityAdmisionApplcation.Controllers
     {
         public IActionResult Register()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Register( Registration obj)
+        {
+
             return View();
         }
     }

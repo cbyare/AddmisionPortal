@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UniversityAdmisionApplcation.Models;
 
 namespace UniversityAdmisionApplcation.Controllers
 {
@@ -8,6 +9,13 @@ namespace UniversityAdmisionApplcation.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Sign(Login lg)
+        {
+            return View();
+        }
+
 
         public IActionResult Forget()
         {
