@@ -9,7 +9,15 @@
 <h1 class="text-center mt-5">Login</h1>
 
 <div class="container text-white ">
-
+    @if(TempData["ErrorMessage"] != null)
+    {
+        if (TempData["ErrorMessage"] == "error")
+    {
+        <div class="alert alert-danger" role="alert">
+            Incorrect Username or password !
+         </div>
+    }
+    }
 
     <div class="row">
 

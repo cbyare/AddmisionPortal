@@ -13,6 +13,26 @@
 
 <div class="container text-white">
 
+    @if(TempData["ErrorMessage"] !=null)
+    {
+          if(TempData["ErrorMessage"] =="Success")
+    { 
+        
+        <div class="alert alert-primary" role="alert">
+             Your Application Is Successfully Sent !
+        </div>
+    }
+    if (TempData["ErrorMessage"] == "error")
+    {
+        <div class="alert alert-danger" role="alert">
+
+         </div>
+    }
+        
+    }
+
+  
+
 
 <div  class="row">
    <form enctype="multipart/form-data"  method="post"  asp-controller="Registration" asp-action="Register">
@@ -80,13 +100,13 @@
 </div>
     </div>
 
-@*             <div class="col-6">
+             <div class="col-6">
 <div class="mb-3">
   <label  class="form-label">File</label>
   <input type="file"  asp-for="File"  class="form-control" >
 </div>
 
-    </div>*@
+    </div>
 
    <div class="col-6">
        <div class="mt-4">
@@ -119,11 +139,15 @@
 
     <div class="col-6">
         <label  class="form-label">Faculty</label>
-   <select class="form-select" asp-for="FaucultyId"  aria-label="Default select example">
-  <option selected>Select</option>
-  <option value="1">Faculty of Science </option>
-  <option value="2">Faculty of Arts and Social Studies</option>
-  <option value="3">Faculty of Engineering</option>
+   <select class="form-select" asp-for="FacultyID"   aria-label="Default select example">
+ 
+       <option selected>Select</option>
+
+       @foreach (var  faculty in ViewBag.Faculties)
+       {
+           <option value="@faculty.ID">@faculty.FacultyName </option>
+       }
+      
 </select>
 
 

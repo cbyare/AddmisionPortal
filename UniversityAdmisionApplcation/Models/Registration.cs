@@ -1,14 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UniversityAdmisionApplcation.Models
 {
     public class Registration
     {
-        [Key]
-      public int Id { get; set; }
-      public string FirstName { get; set; }
-      public string LastName { get; set; }
-
+    
+        public int ID { get; set; }
+        public int FacultyID { get; set; }
+        public string Role { get; set; }
+        public string FirstName { get; set; }
+         public string LastName { get; set; }
         public string DateOfBirth { get; set; }
         public string Email { get; set; }
         public string Username { get; set; }
@@ -17,8 +18,9 @@ namespace UniversityAdmisionApplcation.Models
         public string Address { get; set; }
         public string File { get; set; }
         public string Gender { get; set; } 
-        public string FaucultyId { get; set; }
         public int Status { get; set; }
         public string EducationLevel { get; set; }
+     
+     
     }
 }

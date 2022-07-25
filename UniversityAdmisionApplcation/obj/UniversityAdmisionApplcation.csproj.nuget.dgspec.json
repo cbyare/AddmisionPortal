@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WORKING_AREA\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj": {}
+    "D:\\WORKING_AREA\\Internship\\AddmisionPortal\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj": {}
   },
   "projects": {
-    "D:\\WORKING_AREA\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj": {
+    "D:\\WORKING_AREA\\Internship\\AddmisionPortal\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WORKING_AREA\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj",
+        "projectUniqueName": "D:\\WORKING_AREA\\Internship\\AddmisionPortal\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj",
         "projectName": "UniversityAdmisionApplcation",
-        "projectPath": "D:\\WORKING_AREA\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj",
+        "projectPath": "D:\\WORKING_AREA\\Internship\\AddmisionPortal\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\WORKING_AREA\\UniversityAdmisionApplcation\\UniversityAdmisionApplcation\\obj\\",
+        "outputPath": "D:\\WORKING_AREA\\Internship\\AddmisionPortal\\UniversityAdmisionApplcation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
               "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.7, )"
             }
