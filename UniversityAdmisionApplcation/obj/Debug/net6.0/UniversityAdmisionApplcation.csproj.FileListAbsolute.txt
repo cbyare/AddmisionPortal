@@ -87,3 +87,4 @@ D:\WORKING_AREA\Internship\AddmisionPortal\UniversityAdmisionApplcation\obj\Debu
 D:\WORKING_AREA\Internship\AddmisionPortal\UniversityAdmisionApplcation\obj\Debug\net6.0\UniversityAdmisionApplcation.pdb
 D:\WORKING_AREA\Internship\AddmisionPortal\UniversityAdmisionApplcation\obj\Debug\net6.0\UniversityAdmisionApplcation.genruntimeconfig.cache
 D:\WORKING_AREA\Internship\AddmisionPortal\UniversityAdmisionApplcation\obj\Debug\net6.0\ref\UniversityAdmisionApplcation.dll
+D:\WORKING_AREA\Internship\AddmisionPortal\UniversityAdmisionApplcation\bin\Debug\net6.0\Newtonsoft.Json.dll

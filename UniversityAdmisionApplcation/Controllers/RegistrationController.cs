@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UniversityAdmisionApplcation.Database;
 using UniversityAdmisionApplcation.Models;
+using UniversityAdmisionApplcation.SMSService;
 
 namespace UniversityAdmisionApplcation.Controllers
 {
@@ -44,6 +45,9 @@ namespace UniversityAdmisionApplcation.Controllers
            var result = _context.SaveChanges();
             if(result > 0)
             {
+                var ob = new API();
+               var res=  ob.SendSMS(obj.MobileNumber,"Waaku mahadsantahay codsigaaga waxaan kugu adeegi doonaa sida ugu dhaqsiyaha badan\n Admission Office");
+                //Send sMS 
                 TempData["ErrorMessage"] = "Success";
             }
 

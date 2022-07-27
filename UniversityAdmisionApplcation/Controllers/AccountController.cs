@@ -43,7 +43,7 @@ namespace UniversityAdmisionApplcation.Controllers
                 }
 
 
-                return RedirectToAction("DashboardPage", "Dashboard");
+                return RedirectToAction("DashboardPage", "Dashboard", ViewBag.FirstName);
             }
 
             TempData["ErrorMessage"] = "error";
